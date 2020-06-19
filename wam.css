@@ -1,0 +1,96 @@
+body { 
+	background-color: #01893f;
+}
+img { 
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%; 
+}
+.title { 
+	font-size: 18px;
+	color: yellow;
+	font-family: "Futura"; 
+}
+.text-style { 
+	font-size: 42px; 
+	color: white;
+	font-family: "Futura"; 
+}
+#timer {
+	float: left;
+	text-align: left; 
+	padding-left: 30px; 
+}
+#score {
+	float: right; 
+	text-align: right; 
+	padding-right: 30px; 
+}
+.scores-container {
+	margin-bottom: 35px;
+	border: 2px solid yellow;
+	border-radius: 5px;
+	text-align: center;
+}
+#scoreboard {
+	font-family: "Futura";
+	color: white;
+	font-size: 18px;
+}
+#divcontainer {
+	padding-top: 24px; 
+	width: 400px; 
+	margin: 0 auto; 
+}
+
+.item1 {grid-area: hole_a; }
+.item2 {grid-area: hole_b; }
+.item3 {grid-area: hole_c; }
+.item4 {grid-area: hole_d; }
+.item5 {grid-area: hole_e; }
+.item6 {grid-area: hole_f; }
+.item7 {grid-area: hole_g; }
+.item8 {grid-area: hole_h; }
+.item9 {grid-area: hole_i; }
+
+.grid-container { 
+	clear: both; 
+	display: grid; 
+	grid:
+	'hole_a hole_b hole_c'
+	'hole_d hole_e hole_f'
+	'hole_g hole_h hole_i';
+	grid-gap: 30px; 
+	padding: 10px; 
+	background-color: #01893f; 
+ }
+
+ .grid-container > div {
+	 background-color: #01893f;
+	 text-align: center;
+	 padding: 20px 0;
+	 font-size: 30px;
+ }
+.button { 
+	text-align: center;
+	width: 200px;
+	margin-left: auto; 
+	margin-right: auto; 
+	margin-top: 25px;
+	clear: both;
+	border: 2px solid yellow;
+	border-radius: 10px;
+	transition: background-color 0.4s ease-out;
+}
+.button:hover {
+	background-color: black;
+	border-color: yellow;
+}
+.mole { 
+	background-color: #01893f;
+}
+.countdown {
+	-webkit-text-stroke: 1px white;
+	color: red;
+}
